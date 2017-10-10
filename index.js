@@ -18,8 +18,13 @@ app.get('/date/:dateValue', function(req, res, next) {
     }
     if (isNaN(dateValue)) {
         var naturalDate = new Date(dateValue);
-        naturalDate = naturalDate.toLocaleDateString("en-us", options);
-        var unixDate = new Date(dateValue).getTime() / 1000;
+        if (naturalDate == "Invalid Date") {
+            naturalDate = null;
+            unixDate = null;
+        } else {
+            naturalDate = naturalDate.toLocaleDateString("en-us", options);
+            var unixDate = new Date(dateValue).getTime() / 1000;
+        }
     } else {
         var unixDate = dateValue;
         var naturalDate = new Date(dateValue * 1000);
