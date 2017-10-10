@@ -1,0 +1,24 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "a web app that takes in natural or unix dates and returns the unix and the natural dates that correspond to it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Banhawy/Timestamp-microservice.git"
+  },
+  "keywords": [
+    "express",
+    "unix",
+    "timestamp"
+  ],
+  "author": "Adham El Banhawy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Banhawy/Timestamp-microservice/issues"
+  },
+  "homepage": "https://github.com/Banhawy/Timestamp-microservice#readme"
+}
